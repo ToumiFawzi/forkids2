@@ -12,12 +12,13 @@
 		</div>
 		<div class="col-md-9" id="acontent">
 		@foreach($post as $posts)
+		@foreach($users as $user)
 		      <a href="{{ route('chat') }}">
                         <div class="thematique_lien">
                             <div class="thematique_avatar"></div>
                             <div class="thematique_titre">
                            
-                                <span class="thematique_author">{{Auth::user()->identity}}</span> - <span class="thematique_date">Posté le {{$posts->date_creation}}</span><br>
+                                <span class="thematique_author">{{$user->identity}}</span> - <span class="thematique_date">Posté le {{$posts->date_creation}}</span><br>
                                 <span class="thematique_content">{{ $posts->content }}</span><br>
                                 <span class="thematique_last_message">Dernier message aujourd'hui à 18h48</span>
                             
@@ -26,6 +27,7 @@
                         </div>
                     </a>
                     
+            @endforeach
             @endforeach
 		</div>
 	</div>

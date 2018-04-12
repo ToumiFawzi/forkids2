@@ -10,4 +10,13 @@ class Community extends Model
     
     protected $fillable = [
         'title','description','responsabe_id','date' ];
+    
+    public function posts(){
+        
+        return $this->hasMany('Thematics');
+        
+    }
+        
 }
+
+

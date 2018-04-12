@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Thematics;
+use App\User;
 
 class ThematicsController extends Controller
 {
@@ -15,8 +16,8 @@ class ThematicsController extends Controller
     public function index()
     {
         $post = Thematics::get();
-        
-        return view('thematics', compact('post'));
+        $users = User::get();
+        return view('thematics', compact('post','users'));
         
     }
 
