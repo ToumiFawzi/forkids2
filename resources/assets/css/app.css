@@ -1,0 +1,582 @@
+/*# CSS PERSONNALISE */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Verdana', 'DejaVu Sans';
+	background-color: #f7f7f7;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.container_hidden {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.row {
+	margin: 0;
+}
+
+.rowhome {
+	margin: 13vh 0 13vh 0;
+}
+
+@media screen and (max-width: 767px) {
+	#aside {
+		display: none;
+		padding: 0;
+		height: 100%;
+	}
+	#acontent {
+		padding: 0 0 150px 0;
+		background-color: #fcfcfc;
+		height: 100%;
+		overflow-y: auto;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	#aside {
+		display: block;
+		padding: 0;
+		height: 100%;
+	}
+	#acontent {
+		padding: 0 0 150px 0;
+		background-color: #fcfcfc;
+		height: 100%;
+		overflow-y: auto;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+a:focus {
+	text-decoration: none;
+	color: white;
+}
+
+.row  a {
+	color: black;
+}
+
+hr {
+	margin: 5vh;
+	border: 1px solid #80b62a;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #80b62a;
+	border-radius: 100px;
+}
+
+::-webkit-scrollbar-button {
+	height: 10px;
+}
+
+.picto {
+	width: 4vh;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+.header {
+	background-color: #80b62a;
+	width: 100%;
+	color: white;
+	z-index: 10;
+}
+
+.header_table {
+	width: 100%;
+}
+
+.header_td_left {
+	text-align: left;
+	width: 33%;
+	padding: 10px;
+	font-size: 3vh;
+}
+
+.header_td_center {
+	text-align: center;
+	width: 33%;
+	padding: 10px;
+	font-size: 3vh;
+}
+
+.header_td_right {
+	text-align: right;
+	width: 33%;
+	padding: 10px;
+}
+
+.footer {
+	background-color: #80b62a;
+	width: 100%;
+	color: white;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+}
+
+.avatarnom {
+	margin: -14vh 2vh 2vh 2vh;
+	text-align: center;
+}
+
+.avatar {
+	width: 20vh;
+	height: 20vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	margin: 2.5vh auto;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+}
+
+.avatar:hover {
+	border-radius: 2px;
+}
+
+.parentsname {
+	font-size: 5vh;
+}
+
+.colonne {
+	background-color: white;
+	border: 1px solid #d7d7d7;
+	border-radius: 2px;
+	padding: 2vh;
+	margin: 3vh 2vh 2vh 2vh;
+	color: #333333;
+	font-size: 2.5vh;
+	-moz-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	-webkit-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	-o-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	box-shadow: 0px 1px 1px 0px #9b9b9b;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b,
+		Direction=180, Strength=1);
+}
+
+.colonne_invisible {
+	padding: 2vh;
+	margin: 5vh 2vh 2vh 2vh;
+	height: 100%;
+	color: #333333;
+	font-size: 2.5vh;
+	min-height: 55vh;
+	max-height: 65vh;
+}
+
+.colonnecontent {
+	float: left;
+}
+
+.liste_users {
+	background-color: #333333;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.cadre {
+	overflow-y: scroll;
+	height: 40vh;
+	padding: 2vh;
+	margin: 3vh 0;
+}
+
+.elementlist {
+	color: #80b62a;
+}
+
+.categorie {
+	font-size: 5vh;
+	color: #80b62a;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.communaute_lien {
+	display: flex;
+	text-align: center;
+	margin: 3vh;
+}
+
+.communaute_titre {
+	border: 0.3vh solid grey;
+	border-radius: 2vh;
+	padding: 2vh 3vh 2vh 2vh;
+	width: 100%;
+}
+
+.communaute_titre:hover {
+	border: 0.3vh solid #80b62a;
+}
+
+.communaute_arrow {
+	margin-left: -3.2vh;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.liste_users_lien {
+	color: #dddddd;
+	display: flex;
+}
+
+.liste_users_lien:hover {
+	background-color: #282828;
+}
+
+.liste_users_avatar {
+	width: 6vh;
+	height: 6vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+	display: inline-block;
+	margin: 2vh;
+}
+
+.liste_users_avatar:hover {
+	border-radius: 2px;
+}
+
+.liste_users_nom {
+	display: inline;
+	vertical-align: middle;
+	margin: 3vh 0 3vh 0;
+	font-size: 3vh;
+}
+
+.thematique_lien {
+	display: flex;
+	text-align: center;
+	margin: 3vh;
+}
+
+.thematique_avatar {
+	width: 10vh;
+	height: 9.2vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+	display: inline-block;
+	margin: 2vh -9.9vh 2vh 2vh;
+	z-index: 4;
+}
+
+.thematique_avatar:hover {
+	border-radius: 2px;
+}
+
+.thematique_titre {
+	border: 0.3vh solid grey;
+	border-radius: 2vh;
+	background-color: #FEFEFE;
+	padding: 2vh 3vh 2vh 8vh;
+	margin-left: 5vh;
+	width: 100%;
+	text-align: left;
+	z-index: 2;
+}
+
+.thematique_titre:hover {
+	border: 0.3vh solid #80b62a;
+}
+
+.thematique_author {
+	font-weight: bold;
+	font-size: 2.5vh;
+}
+
+.thematique_content {
+	color: #80B62A;
+	margin-left: 5vh;
+	line-height: 6vh;
+	font-size: 3vh;
+}
+
+.thematique_last_message {
+	float: right;
+}
+
+.thematique_arrow {
+	margin-left: -3.2vh;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 3;
+}
+
+.thematique_top_table {
+	width: 100%;
+	background-color: #FEFEFE;
+	border-bottom: 1px solid #d7d7d7;
+	-moz-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	-webkit-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	-o-box-shadow: 0px 1px 1px 0px #9b9b9b;
+	box-shadow: 0px 1px 1px 0px #9b9b9b;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b,
+		Direction=180, Strength=1);
+}
+
+.thematique_top_avatar {
+	width: 12vh;
+	height: 12vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+	margin: 5vh;
+	z-index: 4;
+}
+
+.thematique_top_avatar:hover {
+	border-radius: 2px;
+}
+
+.thematique_top_author {
+	font-weight: bold;
+	font-size: 2.5vh;
+}
+
+.thematique_top_date {
+	font-size: 2vh;
+	color: #b7b7b7;
+}
+
+.thematique_top_content {
+	color: #80B62A;
+	line-height: 8vh;
+	font-size: 4vh;
+}
+
+.thematique_reponse_table {
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.thematique_reponse_avatar {
+	width: 8vh;
+	height: 8vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+	margin: 5vh;
+	z-index: 4;
+}
+
+.thematique_reponse_avatar:hover {
+	border-radius: 2px;
+}
+
+.thematique_reponse_author {
+	font-weight: bold;
+	font-size: 2.5vh;
+}
+
+.thematique_reponse_date {
+	font-size: 2vh;
+	color: #b7b7b7;
+}
+
+.thematique_reponse_content {
+	margin-left: 4vh;
+	font-size: 2.3vh;
+}
+
+.enfant {
+	margin: 3vh 0;
+}
+
+.avatarenfant {
+	width: 10vh;
+	height: 10vh;
+	background-image: url('../../resources/images/noavatar.svg');
+	background-size: 103%;
+	background-position: center;
+	border-radius: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	transition-property: border-radius;
+	transition-duration: 0.2s;
+}
+
+.avatarenfant:hover {
+	border-radius: 2px;
+}
+
+.kidsname {
+	font-weight: bold;
+	text-align: center;
+}
+
+.kidsage {
+	float: right;
+}
+
+.kidsetablissement {
+	font-size: 2vh;
+	color: #80b62a;
+	text-align: center;
+}
+
+.kidslevel {
+	float: right;
+	color: #80b62a;
+}
+
+/*# SURCHARGE BOOTSTRAP */
+.btn-primary {
+	color: #fff;
+	background-color: #80B62A;
+	border-color: #80B62A;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #6e9b25;
+	border-color: #6e9b25;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+	color: #fff;
+	background-color: #80B62A;
+	border-color: #80B62A;
+}
+
+.btn-primary:not (:disabled ):not (.disabled ):active, .btn-primary:not
+	 (:disabled ):not (.disabled ).active, .show>.btn-primary.dropdown-toggle
+	{
+	color: #fff;
+	background-color: #6e9b25;
+	border-color: #6e9b25;
+}
+
+.btn-primary:not (:disabled ):not (.disabled ):active:focus,
+	.btn-primary:not (:disabled ):not (.disabled ).active:focus, .show>.btn-primary.dropdown-toggle:focus
+	{
+	box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.5);
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #6e9b25;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(128, 182, 42, 0.25);
+}
+
+.form-control:disabled, .form-control[readonly] {
+	background-color: #e9ecef;
+	opacity: 1;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	background-color: #6e9b25;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(128, 182, 42, 0.25);
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+	color: #fff;
+	background-color: #ade55e;
+}
+
+.custom-control-input:disabled ~ .custom-control-label::before {
+	background-color: #ecefe8;
+}
+
+.custom-control-label::before {
+	background-color: #ecefe8;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before
+	{
+	background-color: #80B62A;
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~
+	.custom-control-label::before {
+	background-color: #80B62A;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~
+	.custom-control-label::before {
+	background-color: rgba(128, 182, 42, 0.5);
+}
+
+.custom-checkbox .custom-control-input:disabled:indeterminate ~
+	.custom-control-label::before {
+	background-color: rgba(128, 182, 42, 0.5);
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before
+	{
+	background-color: #80B62A;
+}
+
+.custom-radio .custom-control-input:disabled:checked ~
+	.custom-control-label::before {
+	background-color: rgba(128, 182, 42, 0.5);
+}
