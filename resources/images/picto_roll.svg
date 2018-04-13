@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="-17.333354"
-     inkscape:cy="78.036119"
+     inkscape:cx="21.078444"
+     inkscape:cy="21.467576"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -63,6 +63,12 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-270,-487.36221)">
+    <circle
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1;stroke:none;stroke-width:5.80000019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4218"
+       cx="325"
+       cy="542.36218"
+       r="55" />
     <rect
        style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4195"

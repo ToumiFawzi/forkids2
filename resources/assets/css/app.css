@@ -31,34 +31,6 @@ html, body {
 	margin: 13vh 0 13vh 0;
 }
 
-@media screen and (max-width: 767px) {
-	#aside {
-		display: none;
-		padding: 0;
-		height: 100%;
-	}
-	#acontent {
-		padding: 0 0 150px 0;
-		background-color: #fcfcfc;
-		height: 100%;
-		overflow-y: auto;
-	}
-}
-
-@media screen and (min-width: 767px) {
-	#aside {
-		display: block;
-		padding: 0;
-		height: 100%;
-	}
-	#acontent {
-		padding: 0 0 150px 0;
-		background-color: #fcfcfc;
-		height: 100%;
-		overflow-y: auto;
-	}
-}
-
 #message {
 	width: 100%;
 }
@@ -152,7 +124,6 @@ hr {
 	background-color: #80b62a;
 	width: 100%;
 	color: white;
-	padding: 10px;
 	position: fixed;
 	bottom: 0;
 	z-index: 10;
@@ -350,15 +321,21 @@ hr {
 	text-align: right;
 }
 
+.thematique_date {
+	color: grey;
+}
+
 .thematique_content {
 	color: #80B62A;
 	margin-left: 5vh;
-	line-height: 6vh;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
 	font-size: 3vh;
 }
 
 .thematique_last_message {
 	float: right;
+	color: grey;
 }
 
 .thematique_arrow {
@@ -499,28 +476,47 @@ hr {
 }
 
 #button_roll {
-	background-color: #333333;
-	border-radius: 0 0 5px 0;
-	padding: 5px;
 	border: none;
+	background: none;
+	float: left;
+	outline: none;
 }
 
-#button_roll:hover {
-	background-color: #282828;
+
+
+@media screen and (max-width: 767px) {
+	#aside {
+		display: none;
+		padding: 0;
+		height: 100%;
+	}
+	#acontent {
+		padding: 0 0 150px 0;
+		background-color: #fcfcfc;
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.thematique_avatar {
+		width: 10vh;
+		height: 8vh;
+	}
 }
 
-#button_roll2 {
-	background-color: #333333;
-	border-radius: 0 0 0 5px;
-	padding: 5px;
-	border: none;
-	float: right;
-	display: none;
+@media screen and (min-width: 767px) {
+	#aside {
+		display: block;
+		padding: 0;
+		height: 100%;
+	}
+	#acontent {
+		padding: 0 0 150px 0;
+		background-color: #fcfcfc;
+		height: 100%;
+		overflow-y: auto;
+	}
 }
 
-#button_roll2:hover {
-	background-color: #282828;
-}
 
 /*# SURCHARGE BOOTSTRAP */
 .btn-primary {
