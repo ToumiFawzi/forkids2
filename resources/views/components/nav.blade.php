@@ -2,7 +2,7 @@
 	<table class="header_table">
 		<tr>
 			<td class="header_td_left">
-				<a href="javascript:history.back()"><img src="../resources/images/picto_arrow2.svg" class="picto">Retour</a>
+				<a href="javascript:history.back()"><img src="../resources/images/picto_arrow2.svg" class="picto"></a>
 			</td>
 			<td class="header_td_center">
 			    <a href="{{ route('home') }}"> {{
