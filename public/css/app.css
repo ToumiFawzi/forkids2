@@ -9034,9 +9034,18 @@ html, body {
 	}
 }
 
+#message {
+	width: 100%;
+}
+
+#okmessage {
+	vertical-align: top;
+}
+
 a {
 	text-decoration: none;
 	color: white;
+	z-index: 3;
 }
 
 a:hover {
@@ -9073,6 +9082,12 @@ hr {
 
 .picto {
 	width: 4vh;
+	margin-left: 1vh;
+	margin-right: 1vh;
+}
+
+.picto_small {
+	width: 3vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
 }
@@ -9278,7 +9293,7 @@ hr {
 	transition-property: border-radius;
 	transition-duration: 0.2s;
 	display: inline-block;
-	margin: 2vh -9.9vh 2vh 2vh;
+	margin: 2vh -10vh 2vh 2vh;
 	z-index: 4;
 }
 
@@ -9304,6 +9319,10 @@ hr {
 .thematique_author {
 	font-weight: bold;
 	font-size: 2.5vh;
+}
+
+.thematique_boutons {
+	text-align: right;
 }
 
 .thematique_content {
@@ -9452,6 +9471,30 @@ hr {
 .kidslevel {
 	float: right;
 	color: #80b62a;
+}
+
+#button_roll {
+	background-color: #333333;
+	border-radius: 0 0 5px 0;
+	padding: 5px;
+	border: none;
+}
+
+#button_roll:hover {
+	background-color: #282828;
+}
+
+#button_roll2 {
+	background-color: #333333;
+	border-radius: 0 0 0 5px;
+	padding: 5px;
+	border: none;
+	float: right;
+	display: none;
+}
+
+#button_roll2:hover {
+	background-color: #282828;
 }
 
 /*# SURCHARGE BOOTSTRAP */
